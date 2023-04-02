@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Selenium</title>
+  </head>
+  <body>
+    <h1>Try Capture Me</h1>
+    <h1 value="Oh, you found it">You Will Never Find My Secret Value, Ha Ha</h1>
+    <div>
+      <select name="fructe">
+        <option value="mar">Mar</option>
+        <option value="para">Para</option>
+        <option value="portocala">Portocala</option>
+        <option value="kiwi">Kiwi</option>
+      </select>
+    </div>
+    <input type="text" placeholder="Any Data" />
+    <button id="myButton">Press Me</button>
+    <div id="info"></div>
+  </body>
+</html>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    margin: 10px;
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  select {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #555555;
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+  }
+
+  input[type="text"] {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #555555;
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #999999;
+  }
+
+  input[type="text"]::placeholder {
+    color: #999999;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:active {
+    background-color: #3e8e41;
+  }
+
+  #info {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+  }
+</style>
+
+<script>
+  const myButton = document.getElementById("myButton");
+  const info = document.getElementById("info");
+
+  myButton.addEventListener("click", function () {
+    info.style.display = "block";
+    info.innerHTML = "Button Pressed!";
+    setTimeout(function () {
+      info.style.display = "none";
+    }, 3000);
+  });
+</script>
