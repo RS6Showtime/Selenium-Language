@@ -191,7 +191,7 @@ sleep_time() is used to wait for a specific time before doing another operation.
 
 Switch Tab:
 
-```javasript
+```javascript
 switch_tab(0)
 ```
 switch_tab() is used to switch the tab and the environment where webdriver will execute the operations.
