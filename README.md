@@ -213,6 +213,26 @@ generate() is used to generate random text with characters.
 1. Text Lenght (Number)
 </pre>
 
+Repeat Stuff:
+
+```javascript
+repeat(3, 0.5)
+```
+
+repeat() is used to execute saved repeated functions for a specific time and making the program to wait before executing. REMEMBER that the sleep is firstly executed and the the operation.
+
+<pre>
+1. Execute Time (Number)
+2. Sleep Time (Number)
+</pre>
+
+Save Functions for Repeat:
+
+```javascript
+save_repeat('select_option("xpath", "/html/body/div[1]/select", "Mar", "portocala")')
+save_repeat('select_option("xpath", "/html/body/div[1]/select", "Portocala", "mar")')
+```
+
 Exit Program:
 
 ```javascript
@@ -223,4 +243,7 @@ exit_program() is used to close the chrome webdriver and terminate immediately t
 
 # Support this project
 
-<a href="https://www.buymeacoffee.com/RS6Showtime" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.paypal.com/donate/?business=WPGWD3YJ7GZ9W&no_recurring=0&item_name=Support+me+for+more+github+projects.&currency_code=EUR">
+  <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" />
+</a>
+
