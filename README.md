@@ -233,6 +233,13 @@ save_repeat('select_option("xpath", "/html/body/div[1]/select", "Mar", "portocal
 save_repeat('select_option("xpath", "/html/body/div[1]/select", "Portocala", "mar")')
 ```
 
+save_repeat() is used to save the function to an array and use it later using repeat();
+
+<pre>
+1. Function
+</pre>
+
+
 Exit Program:
 
 ```javascript
