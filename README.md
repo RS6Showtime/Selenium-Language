@@ -9,7 +9,7 @@ We currently support only Windows and xpath as primary method and to acces html 
 # How to use
 
 <pre>
-Usage: mix-panel --script-name <script name>
+Usage: selenium --script-name <script name>
 </pre>
 
 should end in ".mxp" and have some valid instructions.
