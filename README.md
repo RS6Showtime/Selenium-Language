@@ -254,3 +254,6 @@ exit_program() is used to close the chrome webdriver and terminate immediately t
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" />
 </a>
 
+# Note
+
+I am not responsible for any damage you have caused. You are entirely responsible for everything you do.
